@@ -1,0 +1,45 @@
+#container {
+  position: relative;
+  background: rgb(24, 10, 0);
+  width:20rem;
+  height:25rem;
+  color:red;
+  left:50%;
+  top:50vh;
+  transform:translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius:1.5rem;
+  box-shadow: 0 0 1.5rem black, 0 0 2rem black;;
+}
+
+#morseButton {
+  position:absolute;
+  width:10rem;
+  height:10rem;
+  top:55%;
+  left:50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  border: 1px solid rgb(185, 185, 185);
+  background: rgb(107, 107, 107);
+}
+
+#light {
+  width:4rem;
+  height:4rem;
+  position:absolute;
+  top:-16.5%;
+  left:70%;
+  border-radius: 2rem 2rem 0 0;
+  transition: 0.07s;
+}
+
+.off{
+  box-shadow: 0 -0.2rem 0.5rem black;
+  background: rgb(0, 0, 0);
+}
+
+.on {
+  background: rgb(230, 160, 9);
+  box-shadow: 0 -0.1rem 1rem rgb(230, 160, 9), 0 -0.2rem 2rem rgb(230, 160, 9);
+}
