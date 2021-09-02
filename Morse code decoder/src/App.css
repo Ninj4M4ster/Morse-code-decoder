@@ -3,7 +3,6 @@
   background: rgb(24, 10, 0);
   width:20rem;
   height:25rem;
-  color:red;
   left:50%;
   top:50vh;
   transform:translate(-50%, -50%);
@@ -22,6 +21,25 @@
   border-radius: 50%;
   border: 1px solid rgb(185, 185, 185);
   background: rgb(107, 107, 107);
+}
+
+#screen {
+  position:absolute;
+  width:17rem;
+  height:4rem;
+  background:rgb(32, 17, 0);
+  top:15%;
+  left:50%;
+  transform:translate(-50%);
+  border:4px solid black;
+  border-radius:2rem;
+  text-align: left;
+  line-height: 3.5rem;
+  text-indent: 0.9rem;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(197, 129, 4);
+  text-shadow: 0 0 1rem rgb(197, 129, 4), 0 0 2rem rgb(197, 129, 4);
 }
 
 #light {
