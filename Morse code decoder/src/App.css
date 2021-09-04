@@ -11,6 +11,22 @@
   box-shadow: 0 0 1rem black, 1rem 1rem 2rem 0.1rem black;;
 }
 
+#clearButton{
+  position:absolute;
+  width:4rem;
+  height:4rem;
+  top:38%;
+  left:70%;
+  border-radius:50%;
+  background-color: rgb(107, 107, 107);
+  border: 2px solid rgb(185, 185, 185);
+  color: rgb(0, 0, 0);
+  font-size:16px;
+  text-shadow: 0 0 0.5rem rgb(197, 129, 4);
+  font-weight: bold;
+  font-family: 'Azeret Mono', monospace;
+}
+
 #morseButton {
   position:absolute;
   width:10rem;
@@ -19,7 +35,7 @@
   left:50%;
   transform: translate(-50%);
   border-radius: 50%;
-  border: 1px solid rgb(185, 185, 185);
+  border: 2px solid rgb(185, 185, 185);
   background: rgb(107, 107, 107);
 }
 
@@ -34,12 +50,13 @@
   border:4px solid black;
   border-radius:2rem;
   text-align: left;
-  line-height: 3.5rem;
+  line-height: 3.7rem;
   text-indent: 0.9rem;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: bold;
   color: rgb(197, 129, 4);
   text-shadow: 0 0 1rem rgb(197, 129, 4), 0 0 2rem rgb(197, 129, 4);
+  font-family: 'Azeret Mono', monospace;
 }
 
 #light {
