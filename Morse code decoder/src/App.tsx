@@ -8,6 +8,7 @@ interface IProps {
 
 interface IState {
   word?: string;
+  symbols?: string;
 }
 
 class App extends React.Component<IProps, IState> {
@@ -30,7 +31,8 @@ class App extends React.Component<IProps, IState> {
   constructor(props: {} | Readonly<{}>) {
     super(props);
     this.state = {
-      word: ""
+      word: "",
+      symbols: ""
     };
     this.mouseUpFn = this.mouseUpFn.bind(this);
     this.mouseDownFn = this.mouseDownFn.bind(this);
@@ -41,7 +43,7 @@ class App extends React.Component<IProps, IState> {
         <div id="container">
           <div id='light' className='off'></div>
           <div id="screen">{this.state.word}</div>
-          <button id="clearButton" onClick={() => {this.setState({word: ""})}}>Clear</button>
+          <button id="clearButton" onClick={() => {this.setState({word: "", symbols: ""})}}>Clear</button>
           <button id="morseButton" 
           onMouseDown={this.mouseDownFn} 
           onMouseUp={this.mouseUpFn}></button>
@@ -65,11 +67,11 @@ class App extends React.Component<IProps, IState> {
     if (typeof this.time !== "undefined"){
       const timeOfClick = timeEnd - this.time;
       if (timeOfClick <= 100){
-        console.log('short');
+        this.setState({symbols: this.state.symbols + '.'});
       }
       else{
         if (timeOfClick <= 1000){
-          console.log('long');
+          this.setState({symbols: this.state.symbols + '-'});
         }
       }
     }
