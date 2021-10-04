@@ -78,3 +78,8 @@
   background: rgb(230, 160, 9);
   box-shadow: 0 -0.1rem 1rem rgb(230, 160, 9), 0 -0.2rem 2rem rgb(230, 160, 9);
 }
+
+.red {
+  background: red;
+  box-shadow: 0 -0.1rem 1rem red, 0 -0.2rem 2rem red;
+}

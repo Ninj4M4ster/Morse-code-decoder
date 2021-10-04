@@ -86,10 +86,28 @@ class App extends React.Component<IProps, IState> {
 
   timeoutFn() {
     if (typeof this.state.symbols != 'undefined'){
-      const value = this.state.word + this.alphabeth[this.state.symbols];
-      this.setState({word: value, symbols: ''});
+      console.log(typeof this.alphabeth[this.state.symbols]);
+      if (typeof this.alphabeth[this.state.symbols] == 'undefined'){
+        const light = document.getElementById('light');
+        if (light instanceof HTMLElement){
+          light.className = 'red';
+          setTimeout(this.timeoutRedLight, 200);
+        }
+        this.setState({symbols: ''});
+      }
+      else{
+        const value = this.state.word + this.alphabeth[this.state.symbols];
+        this.setState({word: value, symbols: ''});
+      }
     };
   };
+
+  timeoutRedLight() {
+    const light = document.getElementById('light');
+    if (light instanceof HTMLElement){
+      light.className = 'off';
+    }
+  }
 
 };
 export default App;
