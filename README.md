@@ -9,6 +9,6 @@ This repository contains a project of morse code decoder, written in TypeScript 
     4. Open CMD in repo directory and run `npm install`.
 
 # Starting
-In project directory, run `npm start`.
-The web browser should open automatically.
+In project directory, run `npm start`.  
+The web browser should open automatically.  
 If not, [click here](http://localhost:3000).
